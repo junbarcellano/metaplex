@@ -43,31 +43,27 @@ export const Banner = (props: {
           {props.actionComponent}
         </div>
       </div>
+
       <div
         id={'current-banner'}
-        style={{ backgroundImage: `url(${props.src})` }}
+        style={{
+          backgroundImage: `linear-gradient(to right, #651FFF , #AA00FF)`,
+        }}
       >
         <span id={'gradient-banner'}></span>
-        <div id="banner-inner">
+        <div id="banner-inner" style={{ backgroundImage: `url(${props.src})` }}>
           <div id={'message-container'}>
             <div id={'main-heading'}>{props.headingText}</div>
             <div id={'sub-heading'}>{props.subHeadingText}</div>
             <div id={'sub-heading'}>{props.subHeadingText2}</div>
-            {props.actionComponent}
+            <div>
+              <b>COMMING SOON!</b>
+            </div>
+            <div className="banner-buttons">
+              <img height="40" src="/stores.png" />
+            </div>
           </div>
           {props.children}
-          <div className="powered-by">
-            <span>
-              Curated by <b>FAIRYDE </b>
-              <a
-                href="https://ftx.com/referrals#a=91612733"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open <b>FTX</b> accounts.
-              </a>
-            </span>
-          </div>
         </div>
       </div>
     </>

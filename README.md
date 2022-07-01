@@ -179,7 +179,6 @@ solana airdrop 4 NEW_WALLET_ADDRESS
 # Connect your new wallet
 # Create a new store
 # Test your program changes
-# Test commit and push
 ```
 
 ## Reporting security issues
